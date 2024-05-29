@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Forms</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <label for="first-name">First Name:</label><br />
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          required
+          placeholder="John"
+          autofocus
+        /><br />
+
+        <label for="email">Email address:</label><br />
+        <input type="email" name="email" id="email" required /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Message:</legend>
+
+        <label for="msg">Mesage:</label><br />
+        <textarea name="msg" id="msg" rows="5" required></textarea><br />
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
