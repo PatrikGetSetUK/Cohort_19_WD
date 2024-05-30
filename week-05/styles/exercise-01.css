@@ -1,0 +1,16 @@
+/* Exercise-01 CSS  */
+
+/* Change the background colour of div with class container to the green colour. */
+.container {
+  background-color: green;
+}
+
+/* Change the colour of the h2 in div container special into blue colour. */
+.special h2 {
+  color: blue;
+}
+
+/* Change the colour of one word in the paragraph to yellow colour. */
+.yellow {
+  color: yellow;
+}

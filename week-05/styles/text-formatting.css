@@ -1,0 +1,109 @@
+/* RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  /* Removes old-fashioned underlines on links. */
+  text-decoration: none;
+}
+
+/* HELPER */
+/* * {
+  outline: 1px solid red;
+} */
+
+/* VARIABLES */
+:root {
+  --font-color-text: rgb(5, 5, 5);
+  --font-color-accent: cadetblue;
+  --font-color-cite: grey;
+  --font-color-transparent: transparent;
+
+  --background-color-primary: rgb(247, 247, 247);
+}
+
+/* SPACING & TYPOGRAPHY */
+body {
+  margin: 1em;
+  background-color: var(--background-color-primary);
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
+  color: var(--font-color-text);
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: xx-large;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+h2 {
+  font-size: x-large;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: large;
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-size: medium;
+  margin-bottom: 2em;
+}
+
+p::first-letter {
+  font-size: large;
+  font-weight: bold;
+
+  background-color: var(--font-color-accent);
+  padding: 0.1em 0.3em;
+  margin-right: 0.1em;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  position: absolute;
+  left: -0.2em;
+  top: -0.2em;
+  font-size: 5em;
+  padding-left: 0.2em;
+  color: var(--font-color-accent);
+}
+
+blockquote {
+  position: relative;
+  font-size: medium;
+  font-style: italic;
+  line-height: 1.2;
+  padding-left: 3em;
+  margin-bottom: 2em;
+}
+
+blockquote cite {
+  display: block;
+  font-size: smaller;
+  margin-top: 0.2em;
+  color: var(--font-color-cite);
+}
+
+blockquote cite::before {
+  content: "\2014 \2009";
+}
+
+.rights,
+.rights::first-letter {
+  font-size: small;
+  text-align: right;
+  color: var(--font-color-cite);
+  background-color: var(--font-color-transparent);
+}

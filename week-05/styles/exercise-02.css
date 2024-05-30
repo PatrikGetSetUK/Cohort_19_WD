@@ -1,0 +1,13 @@
+/* CLEAN CODE */
+.grand-parent {
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+  font-weight: bolder;
+
+  border: 3px dashed green;
+}
+
+.parent {
+  border: inherit;
+  color: black;
+}

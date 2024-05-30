@@ -1,0 +1,27 @@
+:root {
+  /* VARIABLES - COLOURS */
+  --color-red: #df3939;
+  --color-blue: blue;
+  --color-green: #15bb15;
+  --color-transparent: transparent;
+
+  /* VARIABLES - SPACING */
+  --small: 4px;
+  --medium: 8px;
+  --large: 16px;
+}
+
+/* TYPOGRAPHY */
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  color: var(--color-red);
+  margin-bottom: var(--large);
+}
+
+h2 {
+  color: var(--color-green);
+  margin-bottom: var(--medium);
+}
