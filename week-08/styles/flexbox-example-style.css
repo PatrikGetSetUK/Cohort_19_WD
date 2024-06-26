@@ -1,0 +1,90 @@
+/* HELPER */
+/* * {
+    outline: 1px solid red;
+  } */
+
+/* Variables */
+:root {
+  --nav-color: #675d50;
+  --nav-text: #fff;
+  --primary-color: #f3deba;
+  --secondary-color: #abc4aa;
+  --hover-color: #a9907e;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  background-image: url("../../week-07/images/wd_07-02_grid_exercise_02_soil.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: var(--nav-color);
+  height: 70px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.navbar a {
+  color: var(--nav-text);
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
+/* Logo for mobile and tablet - optional */
+.navbar img {
+  height: 60px;
+  min-height: 60px;
+  margin: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.container .navbar ul li {
+  padding: 10px;
+  margin: 0 10px;
+  list-style-type: none;
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}

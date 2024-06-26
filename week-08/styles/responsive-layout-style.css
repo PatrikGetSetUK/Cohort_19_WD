@@ -1,0 +1,44 @@
+/* HELPER  */
+* {
+  outline: 1px solid red;
+}
+
+/* MOBILE VERSION */
+header,
+footer {
+  height: 50px;
+  background-color: green;
+}
+
+main {
+  height: 350px;
+  background-color: blue;
+}
+
+section {
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+}
+
+aside {
+  height: 120px;
+  width: 100%;
+  background-color: red;
+}
+
+@media only screen and (min-width: 920px) {
+  main {
+    display: flex;
+  }
+
+  section {
+    width: 35%;
+  }
+
+  aside {
+    width: 25%;
+  }
+
+  /* More code here */
+}

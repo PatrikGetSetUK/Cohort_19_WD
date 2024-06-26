@@ -1,0 +1,61 @@
+/* HELPER */
+* {
+  outline: 1px solid red;
+}
+
+body {
+  margin: 40px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Mobile */
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
+    "footer";
+}
+
+/* Tablet */
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    grid-template-areas:
+      "header   header"
+      "sidebar  content"
+      "sidebar2 content"
+      "footer  footer";
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    grid-template-areas:
+      "header   header  header"
+      "sidebar  content sidebar2"
+      "sidebar  content sidebar2"
+      "footer   footer  footer";
+  }
+}
