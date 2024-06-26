@@ -1,0 +1,81 @@
+/* Author: Patrik Krizek 
+   Version: V1.0 
+   Created: 20/03/2024
+*/
+
+/* ---CAROUSEL--- */
+
+/* This is a container for the carousel. You might want to change the max-with
+to 100% to stretch carousel over entire parent element. */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Activates flexbox on image slides. */
+.carousel-slide {
+  display: flex;
+}
+
+/* Defines sizing of images. */
+.carousel-slide img {
+  width: 100%;
+  display: none;
+}
+
+/* Identifies how the images will be displayed when they are active. */
+.carousel-slide img.active {
+  display: block;
+}
+
+/* Set the positioning of the left and right arrow carousel navigation.  */
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Defines the color of the carousel arrows navigation. The color of the arrows
+  should be in the contrast with the images to make them visible. */
+.carousel-navigation .prev,
+.next {
+  color: white;
+}
+
+/* Alignments and coloring of the left and right arrow navigation. */
+.carousel-navigation button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* The carousel bullets points alignment. */
+.carousel-bullets {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Setting up the colour of the non-active carousel bullets. You might want to
+  change it according to your brand colour pallet.*/
+.carousel-bullets .bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Setting up the colour of the active carousel bullets. You might want to
+  change it according to your brand colour pallet.*/
+.carousel-bullets .bullet.active {
+  background-color: #717171;
+}
