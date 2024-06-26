@@ -1,0 +1,88 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Set root font-size for rem to 62.5% to change the font-size default value to 10px. */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  /* Set font-size back to it's original 16px by using 1.6rem. */
+  font-size: 1.6rem;
+}
+
+/* --IMAGES-- */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* CSS RESET END */
+
+/* HELPER */
+* {
+  outline: 1px solid red;
+}
+
+/* VARIABLES */
+:root {
+  /* Spacing */
+  --spacing-large: 3rem;
+  --spacing-medium: 2rem;
+  --spacing-small: 1rem;
+
+  --color-bg: cornflowerblue;
+}
+
+/* ---#1.0 RESPONSIVE WEBPAGE TEMPLATE--- */
+/* ---#1.1 FOR DESKTOP--- */
+.container-responsive {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-bg);
+  padding: var(--spacing-large);
+  margin: var(--spacing-medium);
+}
+
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: var(--spacing-small);
+}
+
+footer {
+  background-color: darkorange;
+  color: white;
+  padding: var(--spacing-small);
+}
+
+/* ---#1.2 FOR TABLETS AND MOBILES--- */
+@media only screen and (max-width: 600px) {
+  .container-responsive {
+    flex-direction: column;
+  }
+
+  footer {
+    background-color: red;
+  }
+
+  header {
+    color: yellow;
+  }
+}
