@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // Reapeat 5 times "Hello world!"
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+            console.log("Hello world!");
+        }
+
+        // Display the index number of the loop X times.
+        // The last number needs to be 10.
+        for (let i = 0; i < 11; i++) {
+            console.log(i);
+        }
+
+        // Create following patter:
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        let x, y, character;
+
+        for (x = 1; x <= 5; x++) {
+            character = "";
+
+            for (y = 1; y <= x; y++) {
+                character += "*";
+            }
+
+            console.log(character);
+
+        }
+
+        // Make it reverse:
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+        for (let x = 6; x >= 1; x--) {
+            let ch = "";
+
+            for (let y = x; y >= 1; y--)
+                ch += "*";
+
+            console.log(ch)
+        }
+
+        // Solution 2
+        for (let x = 5; x >= 1; x--) {
+            console.log('*'.repeat(x));
+        }
+
+        // Create following patter:
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        for (x = 1; x <= 5; x++) {
+            console.log('*'.repeat(x));
+        }
+
+
+        // ----------------------------------------------
+
+
+        const numbers = [1, 2, 3, 5, 10];
+
+        numbers.forEach(number => {
+            console.log(number + 2);
+        });
+    </script>
+</body>
+
+</html>

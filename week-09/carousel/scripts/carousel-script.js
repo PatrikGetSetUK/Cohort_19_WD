@@ -2,16 +2,16 @@ const slides = document.querySelectorAll(".carousel-slide img");
 const bullets = document.querySelectorAll(".carousel-bullets .bullet");
 let currentSlide = 0;
 
-function showSlide(n) {
+function showSlide(number) {
   slides.forEach((slide) => slide.classList.remove("active"));
   bullets.forEach((bullet) => bullet.classList.remove("active"));
 
-  if (n >= slides.length) {
+  if (number >= slides.length) {
     currentSlide = 0;
-  } else if (n < 0) {
+  } else if (number < 0) {
     currentSlide = slides.length - 1;
   } else {
-    currentSlide = n;
+    currentSlide = number;
   }
 
   slides[currentSlide].classList.add("active");
