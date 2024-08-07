@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 DOM Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <p>This is a paragraph.</p>
+        <button id="highlightBtn">Highlight</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const highlightButton = document.getElementById('highlightBtn');
+            const paragraph = document.querySelector('p');
+
+            highlightButton.addEventListener("click", function () {
+                paragraph.classList.toggle('highlight');
+            });
+        });
+    </script>
+</body>
+
+</html>
